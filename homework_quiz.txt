@@ -1,0 +1,62 @@
+POLYMORPHISM
+
+1 - What does the word 'polymorphism' mean?
+
+Polymorphism literally means (more or less) "many shapes".
+
+
+
+2 - What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+
+It means that something can change behaviour depending on the context. For example,
+we can overload a class method by implementing it multiple times with the same name
+but different types and/or numbers of inputs.
+
+
+
+3 - What can we use to implement polymorphism in Java?
+
+We can use abstract classes and interfaces.
+
+
+
+4 - How many 'forms' can an object take when using polymorphism?
+
+I'm not sure I understand the question, but the answer is probably "any number" anyway.
+A class can be at least as many forms as the number of classes in the inheritance chain.
+If the question is related to composition, an object can take any number of 'forms'
+if its class is composed of other classes through interfaces.
+
+
+
+5 - Give an example of when you could use polymorphism.
+
+When I need to create an ArrayList of different classes (I can find something they have
+in common and link them through an interface).
+
+--------------------------------------------------------------------------------
+
+
+COMPOSITION
+
+
+1 - What do we mean by 'composition' in reference to object-oriented programming?
+
+Passing a class to another class.
+
+
+
+2 - When would you use composition? Provide a simple example in Java.
+
+I would favour composition over inheritance any time that the classes I intend to
+implement are not naturally in a parent-child relationship. If the properties of
+the classes that I'm implementing are not one the subset of the other, it is better
+to keep the classes more loosely coupled and use composition instead of inheritance.
+For example, items that are saleable in a supermarket.
+
+
+
+3 - What is/are the advantage(s) of using composition?
+
+Possible to use multiple interfaces for a class, possible to abstract classes
+that are not already related by inheritance.
