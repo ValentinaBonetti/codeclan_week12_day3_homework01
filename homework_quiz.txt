@@ -2,7 +2,7 @@ POLYMORPHISM
 
 1 - What does the word 'polymorphism' mean?
 
-Polymorphism literally means (more or less) "many shapes".
+Polymorphism literally means (more or less) "many forms".
 
 
 
@@ -10,29 +10,27 @@ Polymorphism literally means (more or less) "many shapes".
 
 It means that something can change behaviour depending on the context. For example,
 we can overload a class method by implementing it multiple times with the same name
-but different types and/or numbers of inputs.
+but different types and/or numbers of inputs (it can also be the constructor).
 
 
 
 3 - What can we use to implement polymorphism in Java?
 
-We can use abstract classes and interfaces.
+We can use abstract classes, inheritance chains and interfaces.
 
 
 
 4 - How many 'forms' can an object take when using polymorphism?
 
-I'm not sure I understand the question, but the answer is probably "any number" anyway.
-A class can be at least as many forms as the number of classes in the inheritance chain.
-If the question is related to composition, an object can take any number of 'forms'
-if its class is composed of other classes through interfaces.
+Any number.
+A class can be at least as many forms as the number of classes in its inheritance chain.
 
 
 
 5 - Give an example of when you could use polymorphism.
 
 When I need to create an ArrayList of different classes (I can find something they have
-in common and link them through an interface).
+in common and link them through an interface) [PDA example requires this one].
 
 --------------------------------------------------------------------------------
 
@@ -42,7 +40,9 @@ COMPOSITION
 
 1 - What do we mean by 'composition' in reference to object-oriented programming?
 
-Passing a class to another class.
+Passing a class to another class ("...has a..." relationship).
+This is not polymorphism, it's just a way to tidy up the code but the type of
+the object does not change.
 
 
 
@@ -59,4 +59,5 @@ For example, items that are saleable in a supermarket.
 3 - What is/are the advantage(s) of using composition?
 
 Possible to use multiple interfaces for a class, possible to abstract classes
-that are not already related by inheritance.
+that are not already related by inheritance. It helps us to write SOLID code,
+with lots of small parts and easily expandable.
